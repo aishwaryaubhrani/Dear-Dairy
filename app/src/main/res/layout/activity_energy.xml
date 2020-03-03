@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/energy_level"
+    tools:context=".Energy">
+
+
+    <com.sdsmdg.harjot.crollerTest.Croller
+        android:id="@+id/croller"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:foregroundGravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="160dp"
+        app:back_circle_color="#FFFFFF"
+        app:indicator_color="#FFE600"
+        app:indicator_width="0"
+        app:is_continuous="true"
+        app:progress_secondary_stroke_width="10.0"
+        app:progress_primary_stroke_width="25.0"
+        app:label_color="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:main_circle_color="@color/white"
+        app:max="10"
+        app:progress_primary_color="#FFE600"
+        app:progress_secondary_color="#FFFFFF"
+        app:start_offset="45" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity=""
+        android:text=""
+        android:textColor="#FFE600"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/croller"
+        app:layout_constraintStart_toStartOf="@+id/croller"
+        app:layout_constraintTop_toTopOf="@+id/croller" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="ENTER YOUR ENERGY LEVEL"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="Continue"
+        android:gravity="center"
+        android:background="@drawable/button_border2"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
